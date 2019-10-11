@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva|Roboto&display=swap');
+
 html {
     box-sizing: border-box;
     background: #eeeeee;
-    font-family: 'helvetica neue';
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 200;
   }
@@ -28,11 +30,12 @@ html {
   header {
     text-align: center;
     height: 50vh;
-    background: url(http://wes.io/iEgP/wow-so-deep.jpg) bottom center no-repeat;
+    background: url(https://images.unsplash.com/photo-1569173784625-34f37a1a35ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) bottom center no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Mansalva', cursive;
   }
   
   h1 {
@@ -48,6 +51,19 @@ html {
     transition: all 0.5s;
     position: relative;
     z-index: 1;
+  }
+
+  .fixed-nav nav {
+      position: fixed;
+      box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .fixed-nav li.logo {
+      max-width: 500px; /* can't set to 'auto' because animation/transition would not be possible */
+  }
+
+  .fixed-nav .site-wrap {
+      transform: scale(1);
   }
   
   nav ul {
